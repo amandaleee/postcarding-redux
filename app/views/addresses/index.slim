@@ -1,0 +1,32 @@
+section
+	.container 
+		.row 
+			h1 Want a postcard? Enter your info here.
+			/ http://stackoverflow.com/questions/13493026/rails-slim-and-form-tag-does-not-allow-more-then-one-on-a-page
+			= form_for(@click) do |f|
+				div
+				  = f.number_field :myclicks
+					div
+				  = f.submit "Add Now",  data: { confirm: 'Are you sure?' }
+
+section
+	.container
+		.row
+			.col-md-3.form-area
+				h1.accomplishments EmPower Up!
+				p.small The EmPowerUp! Community has done 
+				h2.count
+					= @sum
+				p.small coaching activities since 5/19/2016
+				= form_for(@click) do |f| 
+					div
+					  = f.label "Add yours to the tally:"
+					  = f.number_field :myclicks
+					div
+					  = f.submit "Add Now",  data: { confirm: 'Are you sure?' }
+					  / = f.submit "Save my accomplishments"
+			.col-xs-12.clicklist
+				p here's the list printed to check our work
+				- @clicks.each do |click|
+					p  
+				    = click.myclicks 
