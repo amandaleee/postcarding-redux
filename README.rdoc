@@ -1,28 +1,11 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To get this up and running, cd into the directory where you've cloned it and run rails s. You may have to bundle install too. 
 
-Things you may want to cover:
+The purpose of this app is to rewrite my address-collection form for sendingpost.cards, which is a personal project where I send postcards to anyone who wants one. Previously, it had been a WordPress install leveraging the Contact Form 7 and Contact Form Database plugins, but that was an MVP. 
 
-* Ruby version
+For questions or feedback, email me at amandalee@amandalee.me. 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+If you want a postcard, feel free to sign up at sendingpost.cards. 
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
